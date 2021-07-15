@@ -8,7 +8,42 @@
 ![Total_Summary](https://github.com/Donik22/MechaCar_Statistical_Analysis-/blob/main/images/Total_Summary.PNG)
 ![Lot_Summary](https://github.com/Donik22/MechaCar_Statistical_Analysis-/blob/main/images/Lot_Summary.PNG)
 
-As Seen in the above images, The current manufacturing data meets the design specification for all maufacturing lots in total Although When it comes to indivisual lots, The Data from lot 3 does not meet the specification. It appears lot 3 data is a great factor in the total high variance while the data from the other 2 lots remained below 10 PSI.
+As Seen in the above images, The current manufacturing data meets the design specification for all maufacturing lots in total Although When it comes to indivisual lots, The Data from lot 3 does not meet the specification. It appears lot 3 data is a great factor in the total high variance while the Vatiance from the other 2 lots remained below 10 PSI.
+
+## T-Tests on Suspension Coils
+
+Ho = There is no Significant difference in the given data.
+H1= there is a significant difference in the data.
 
 
+![Total T.test](https://github.com/Donik22/MechaCar_Statistical_Analysis-/blob/main/images/T-test%20Total.PNG)
 
+P-Value = 1 Alpha = 0.05
+P-Value > Alpha
+
+Here the P-value is greater than the critical value of alpha therfore, we reject the null hypothesis and conclude that there is a significant difference between the sample and population means.
+
+![Lot 1](https://github.com/Donik22/MechaCar_Statistical_Analysis-/blob/main/images/T-test%20Lot%201.PNG)
+
+P-Value = 1.568e-11 Alpha = 0.05
+P-Value < Alpha
+
+Above is the result of a T-test of data from Lot 1. The P-value is less than alpha which means we do not reject the null hypothesis meaning that there is no significant difference between the two data.
+
+![Lot 2](https://github.com/Donik22/MechaCar_Statistical_Analysis-/blob/main/images/T-test%20Lot%202.PNG)
+
+P-Value = 0.0005911 Alpha = 0.05
+P-Value < Alpha
+
+above is the result of a T-test of Lots 2. The P-value is greater than alpha which means we reject the null hypothesis meaning that there is no significant difference between the two data.
+
+![Lot 3](https://github.com/Donik22/MechaCar_Statistical_Analysis-/blob/main/images/T-test%20Lot%203.PNG)
+
+P-Value = 0.1589 Alpha = 0.05
+P-Value < Alpha
+
+The P-value is less than the critical value of alpha therfore, we fail to reject the null hypothesis and conclude that there is a significant difference between the two data.
+
+## Study Design: MechaCar vs Competition
+
+To Quantify how MechaCars perform against competition We can add metrics like Fuel Economy , Acceleration, safety ratings , durability and maintenance cost to name a few. These metrics can be the basis of our comparison. The `null Hypothesis` can be `There is less or no difference between the cars` with the `alternative hypothesis` Being `Mecha cars are worst than the competition`. We can Decide whether to upgrade or start promoting the products based on The results of this analysis. For this We can use the `Anova statistical test`. We use This method to analyse how and which metrics affect our performance compared to competition, analysisng a specific category which is `appeal to customers or sales`.
